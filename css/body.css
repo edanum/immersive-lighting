@@ -1,0 +1,17 @@
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  margin-top: 0px;
+}
+
+.title-pic {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  object-fit: cover;
+}

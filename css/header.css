@@ -1,0 +1,17 @@
+nav {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navelement {
+  font-size: 24px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.navelement:hover {
+  background-color: var(--accent-color);
+}
