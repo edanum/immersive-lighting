@@ -1,15 +1,17 @@
 :root {
-  --primary-color: black;
-  --secondary-color: rgb(40, 40, 40);
-  --accent-color: rgb(8, 171, 236);
-  --text-color: white;
+  --primary-color: #16161a;
+  --secondary-color: #72757e;
+  --navbar-color: rgb(5 9 38);
+  --accent-color: hsl(195, 64%, 41%);
+  --text-color: #fffffe;
 }
 
 * {
   font-family: "Titillium Web", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin: 0px;
 }

@@ -1,17 +1,59 @@
 nav {
-  background-color: var(--secondary-color);
+  background-color: var(--navbar-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 3;
 }
 
 .navelement {
   font-size: 24px;
-  padding: 10px;
   width: 100%;
-  text-align: center;
+  color: white;
+  animation: navelement-blind-out 1.5s;
+  border-style: solid;
+  border-width: 0px 1px 1px 0px;
+  border-color: var(--secondary-color);
 }
 
+.navelement a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+/* Hover & Animation */
+
 .navelement:hover {
-  background-color: var(--accent-color);
+  animation: navelement-blind-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navelement-blind-in {
+  100% {
+    background-color: var(--accent-color);
+  }
+}
+
+@keyframes navelement-blind-out {
+  0% {
+    background-color: var(--accent-color);
+  }
+
+  100% {
+    background-color: var(--navbar-color);
+  }
+}
+
+@keyframes navelement-auto {
+  50% {
+    background-color: var(--accent-color);
+  }
 }
