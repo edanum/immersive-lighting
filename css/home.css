@@ -96,3 +96,23 @@
   }
 }
 
+.introduction{
+background-color: var(--navbar-color);
+text-align: center;
+}
+
+
+.introduction__heading{
+  margin: 0px;
+  
+}
+
+
+.introduction__text{
+  padding: 0px 40px 0px 40px
+}
+
+<div class="introduction">
+          <h1 class="introduction__heading">Immersive Lighting</h1>
+          <p class="introduction__text">Welcome to Immersive Lighting.</p>
+        </div>

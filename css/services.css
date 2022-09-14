@@ -1,11 +1,19 @@
 services {
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
-  
   justify-content: center;
   align-items: center;
   background-color: gray;
+  width: 100%;
+}
+
+services h1{
+  display:block;
+  margin: 20px 0px 20px 0px;
+  background-color: black;
+  text-align: center;
 }
 
 .card {

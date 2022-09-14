@@ -1,4 +1,4 @@
-.gallery {
+gallery {
   display: grid;
   justify-content: center;
   align-items: flex-start;
@@ -7,6 +7,9 @@
   background-color: var(--secondary-color);
 }
 
+gallery h1 {
+  margin: 10px auto 10px auto;
+}
 .gallery__pic {
   width: 45vw;
   height: auto;
