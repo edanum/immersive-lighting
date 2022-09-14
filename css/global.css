@@ -1,7 +1,6 @@
 :root {
-  --primary-color: #16161a;
-  --secondary-color: #171718;
-  --navbar-color: rgb(5 9 38);
+  --primary-color: #050926;
+  --secondary-color: #191b2f;
   --accent-color: hsl(195, 64%, 41%);
   --text-color: #fffffe;
 }

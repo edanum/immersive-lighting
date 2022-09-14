@@ -1,5 +1,5 @@
 nav {
-  background-color: var(--navbar-color);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -48,7 +48,7 @@ nav {
   }
 
   100% {
-    background-color: var(--navbar-color);
+    background-color: var(--primary-color);
   }
 }
 
