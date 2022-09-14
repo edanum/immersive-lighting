@@ -1,0 +1,17 @@
+.gallery {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: white;
+}
+
+.gallery__pic {
+  width: 40vw;
+  height: auto;
+  margin: 10px auto 10px auto;
+  
+  
+
+}
