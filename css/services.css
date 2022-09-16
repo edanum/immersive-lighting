@@ -9,12 +9,13 @@ services {
   width: 100%;
 }
 
-services h1{
-  display:block;
-  margin: 20px 0px 20px 0px;
-  background-color: black;
+.heading-services {
+  width: 100%;
   text-align: center;
+  font-size: 28px;
 }
+
+
 
 .card {
   background-color: var(--primary-color);
@@ -22,7 +23,13 @@ services h1{
   border-width: 3px;
   border-radius: 1rem;
   border-color: black;
-  width:30%;
+  width: 30%;
   margin: 20px 5px 20px 5px;
   padding: 10px;
+  min-height: 200px;
+}
+
+.card__header{
+  font-weight: bold;
+  text-align: center;
 }

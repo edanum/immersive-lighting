@@ -7,8 +7,9 @@ gallery {
   background-color: var(--primary-color);
 }
 
-gallery h1 {
-  margin: 10px auto 10px auto;
+.heading-portfolio {
+  margin: 40px auto 10px auto;
+   font-size: 28px;
 }
 .gallery__pic {
   width: 100vw;
