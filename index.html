@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header>
@@ -50,18 +52,18 @@
       <services id="services">
         <h2 class="heading-services">Services</h2>
 
-        <div class="card">
+        <div class="card" data-js="card">
           <img
             class="card__pic"
             src="../sources/icons/concept2.png"
             alt="concept-incon"
           />
           <p class="card__header">Concept & Design</p>
-          <p class="card__content">This is the Content</p>
+          <p class="card__content" js-data="card-content">Das hier wird der Text zum Abschnitt Concept & Design sein. Er könnte etwas länger werden. Dies hier ist ein Test, wie sich die Transition bei einem längeren Text verhält. Das hier wird der Text zum Abschnitt Concept & Design sein. Er könnte etwas länger werden. Dies hier ist ein Test, wie sich die Transition bei einem längeren Text verhält. Das hier wird der Text zum Abschnitt Concept & Design sein. Er könnte etwas länger werden. Dies hier ist ein Test, wie sich die Transition bei einem längeren Text verhält. Das hier wird der Text zum Abschnitt Concept & Design sein. Er könnte etwas länger werden. Dies hier ist ein Test, wie sich die Transition bei einem längeren Text verhält.</p>
         </div>
 
-        <div class="card">
-           <img
+        <div class="card" data-js="card">
+          <img
             class="card__pic"
             src="../sources/icons/realise.png"
             alt="concept-incon"
@@ -70,8 +72,8 @@
           <p class="card__content">This is the Content</p>
         </div>
 
-        <div class="card">
-           <img
+        <div class="card" data-js="card">
+          <img
             class="card__pic"
             src="../sources/icons/operating.png"
             alt="operating-incon"

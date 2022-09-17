@@ -4,7 +4,7 @@ services {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--secondary-color);
   width: 100%;
 }
@@ -18,7 +18,7 @@ services {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--primary-color);
   border-style: solid;
@@ -27,15 +27,22 @@ services {
   border-color: black;
   width: 30%;
   min-height: 350px;
-  margin: 20px 5px 20px 5px;
+  margin: 20px 5px 50px 5px;
   padding: 10px;
   min-height: 200px;
+  max-height: 300px;
   transition: min-height 1s ease-in-out;
 }
 
+@media max-width: 786px{
+  /* for Phones */
+  
+}
+
 .card__pic {
-  height: 200px;
-  margin-bottom: 20px;
+  width: 50%;
+  
+  margin: 20px 0 20px 0;
 }
 
 .card__header {
@@ -43,9 +50,26 @@ services {
   text-align: center;
 }
 
-.card:hover {
-  min-height: 600px;
-  transition: 1s ease-in-out;
+.card__content {
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0)
 }
 
+/* .card:hover {
+  min-height: 600px;
+  transition: 1s ease-in-out;
+} */
 
+/* Diese Klasse steuert die On-Click Funktion der Karten in JS */
+.card--clicked {
+  min-height: 600px;
+  transition: 0.5s ease-in-out;
+}
+
+.card__content--clicked {
+  visibility: visible;
+  color: #ffffff;
+  transition: visibility 2s ease-in 0.5s;
+  transition: color 1s ease-in;
+}
+}
