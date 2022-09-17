@@ -96,23 +96,24 @@
   }
 }
 
-.introduction{
-background-color: var(--navbar-color);
-text-align: center;
-
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbar-color);
+  text-align: center;
 }
 
-
-.introduction__heading{
+.introduction__heading {
   margin: 0px;
   padding-top: 30px;
-  
+  text-decoration: underline var(--accent-color) 5px;
+  text-underline-offset: 1px;
 }
 
-
-.introduction__text{
-  padding: 0px 40px 40px 40px;
+.introduction__text {
+  padding: 20px 40px 40px 40px;
   margin: 0px;
+  width: 80%;
 }
-
-
