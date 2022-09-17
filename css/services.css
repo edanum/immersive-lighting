@@ -26,50 +26,55 @@ services {
   border-radius: 1rem;
   border-color: black;
   width: 30%;
-  min-height: 350px;
   margin: 20px 5px 50px 5px;
   padding: 10px;
-  min-height: 200px;
-  max-height: 300px;
-  transition: min-height 1s ease-in-out;
+  transition: height 0.5s ease-out;
+  /* max-height: 300px; */
 }
 
-@media max-width: 786px{
+@media (max-width: 1100px) {
   /* for Phones */
-  
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  /* for Phones */
+  .card {
+    width: 80%;
+  }
 }
 
 .card__pic {
   width: 50%;
-  
   margin: 20px 0 20px 0;
 }
 
 .card__header {
+  margin: 0px 0px 15px 0px;
   font-weight: bold;
   text-align: center;
+  font-size: 24px;
 }
 
 .card__content {
-  visibility: hidden;
-  color: rgba(255, 255, 255, 0)
+  max-height: 0px;
+  /* position: absolute;
+  visibility: hidden; */
+  color: rgba(255, 255, 255, 0);
 }
 
-/* .card:hover {
-  min-height: 600px;
-  transition: 1s ease-in-out;
+/* .card--clicked { */
+/* Diese Klasse steuert die On-Click Funktion der Karten in JS */
+/* height: 600px;
+  transition: 0.5s ease-in-out;
 } */
 
-/* Diese Klasse steuert die On-Click Funktion der Karten in JS */
-.card--clicked {
-  min-height: 600px;
-  transition: 0.5s ease-in-out;
-}
-
 .card__content--clicked {
-  visibility: visible;
+  max-height: 2000px;
+  opacity: 1;
   color: #ffffff;
-  transition: visibility 2s ease-in 0.5s;
-  transition: color 1s ease-in;
-}
+  transition: 1s ease-in;
+  
 }

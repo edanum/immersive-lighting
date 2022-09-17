@@ -1,16 +1,45 @@
+const cardOne = document.querySelector('[data-js="card1"]');
+const cardTwo = document.querySelector('[data-js="card2"]');
+const cardThree = document.querySelector('[data-js="card3"]');
 
-const cards = document.querySelectorAll('[data-js="card"]');
-const cardContents = document.querySelector('[js-data="card-content"]');
+const cardOneContent = document.querySelector('[data-js="card1-content"]');
+const cardTwoContent = document.querySelector('[data-js="card2-content"]');
+const cardThreeContent = document.querySelector('[data-js="card3-content"]');
+console.log(cardOneContent);
 
-
-
-cards.forEach(item => {
+cardOne.addEventListener('click', event => {
+    cardOneContent.classList.toggle('card__content--clicked')
     
-item.addEventListener('click', event => {
-    item.classList.toggle('card--clicked');
-    cardContents[item].classList.toggle('card__content--clicked'); //Funktioniert noch nicht. Ich weiß an dieser stelle noch nicht, wie ich das n-te Element von cardContents greifen soll. Eventuell (andere) Schleife notwendig?
 })
+
+cardTwo.addEventListener('click', event => {
+    cardTwoContent.classList.toggle('card__content--clicked')
+    
 })
+
+
+cardThree.addEventListener('click', event => {
+    cardThreeContent.classList.toggle('card__content--clicked')
+    
+})
+
+
+
+// Versuch der Vereinheitlichung
+// __________________________________________________________________________
+
+// const cards = document.querySelectorAll('[data-js="card"]');
+// const cardContents = document.querySelector('[js-data="card-content"]');
+
+
+
+// cards.forEach(item => {
+    
+// item.addEventListener('click', event => {
+//     cardContents.classList.toggle('card_content--clicked');
+
+// })
+// })
     
 
 
