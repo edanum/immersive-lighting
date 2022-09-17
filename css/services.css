@@ -15,21 +15,37 @@ services {
   font-size: 28px;
 }
 
-
-
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   border-style: solid;
   border-width: 3px;
   border-radius: 1rem;
   border-color: black;
   width: 30%;
+  min-height: 350px;
   margin: 20px 5px 20px 5px;
   padding: 10px;
   min-height: 200px;
+  transition: min-height 1s ease-in-out;
 }
 
-.card__header{
+.card__pic {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.card__header {
   font-weight: bold;
   text-align: center;
 }
+
+.card:hover {
+  min-height: 600px;
+  transition: 1s ease-in-out;
+}
+
+
