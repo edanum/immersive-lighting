@@ -38,7 +38,10 @@ cardThree.addEventListener('click', event => {
 
 
 
-// Versuch der Vereinheitlichung
+// !!!!!!!!!!!!!!!!!!!!!!!!!IMAGE TAB GALLERY
+
+
+// Versuch der Vereinheitlichung von Card Expand
 // __________________________________________________________________________
 
 // const cards = document.querySelectorAll('[data-js="card"]');
