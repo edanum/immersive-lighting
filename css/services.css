@@ -60,10 +60,10 @@ services {
 
 .card__content {
   max-height: 0px;
-  padding: 0px;
-
+ padding: 0px 20px 0px 20px;
   color: rgba(255, 255, 255, 0);
-  transition: 1s ease-in;
+  transition: 0.5s ease-in;
+  margin: 0px;
 }
 
 .card__arrow {
@@ -73,15 +73,14 @@ services {
 
 .card__arrow img {
   width: 100%;
-  
 }
 
 .card__content--clicked {
   /* content erscheint on click Card */
   max-height: 2000px;
   color: #ffffff;
-  transition: 1s ease-in;
-  padding: 0px 20px 0px 20px;
+  transition: 0.5s ease-in;
+  
 }
 
 .card__arrow--clicked {
