@@ -3,3 +3,4 @@ import { nanoGallery } from "./nanoGallery.js";
 
 serviceAnimation();
 nanoGallery();
+
